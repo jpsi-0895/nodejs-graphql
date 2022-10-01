@@ -16,6 +16,7 @@ qs(app);
 if (process.env.NODE_ENV !== 'test') {
   console.log("database connection");
   mongoose.connect('mongodb://localhost/graphql');
+  console.log('connection')
 }
 
 routes.get('/data', function* () {

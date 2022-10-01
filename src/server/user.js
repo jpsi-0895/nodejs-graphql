@@ -11,6 +11,7 @@ var UserSchema = new mongoose.Schema({
 });
 
 console.log("This is user schema!!");
+
 var User = mongoose.model('User', UserSchema);
 
 export default User;
